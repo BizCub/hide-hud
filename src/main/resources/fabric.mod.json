@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "hide_hud",
+  "version": "${version}",
+  "name": "Hide HUD in Third-Person View",
+  "description": "Hides the player's HUD when viewed in third person and returns the HUD when viewed in first person",
+  "authors": [
+    "Bizarre Cube"
+  ],
+  "contact": {
+    "homepage": "",
+    "issues": ""
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": [
+    "hide_hud.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
