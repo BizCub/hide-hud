@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.bizcub.hideHUD.platforms.fabric.mixin",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

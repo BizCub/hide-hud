@@ -1,25 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "hide_hud",
+  "id": "${id}",
   "version": "${version}",
-  "name": "Hide HUD in Third-Person View",
-  "description": "Hides the player's HUD when viewed in third person and returns the HUD when viewed in first person",
+  "name": "${name}",
+  "description": "${description}",
   "authors": [
     "Bizarre Cube"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/project/L2FnkRE2",
-    "issues": "https://github.com/BizCub/hide-hud/issues"
+    "homepage": "https://modrinth.com/project/${modrinth}",
+    "issues": "https://github.com/BizCub/${github}/issues"
   },
   "license": "MIT",
   "icon": "icon.png",
-  "environment": "client",
   "entrypoints": {},
   "mixins": [
-    "hide_hud.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": ">=${minecraft_version}"
-  }
+    "${id}-common.mixins.json",
+    "${id}-fabric.mixins.json"
+  ]
 }
