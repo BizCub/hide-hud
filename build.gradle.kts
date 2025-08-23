@@ -14,7 +14,7 @@ val mixinId = mod.id.replace("_", "-")
 version = "${mod.version}+${mod.mc_start}"
 group = mod.group
 base {
-    archivesName.set("${mod.id.replace("_", "-")}-$loader")
+    archivesName.set("$mixinId-$loader")
 }
 
 architectury.common(stonecutter.tree.branches.mapNotNull {
