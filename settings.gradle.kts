@@ -28,4 +28,4 @@ stonecutter {
     create(rootProject)
 }
 
-rootProject.name = "Hide HUD"
+rootProject.name = settings.extra["mod.name"] as String
