@@ -22,7 +22,7 @@ stonecutter {
             for (version in versions) version("$version-$loader", version)
         }
         mc("fabric", "1.16.5")
-        mc("forge", "1.16.5", "1.18.2", "1.20.6")
+        mc("forge", "1.20.6", "1.18.2", "1.16.5")
         mc("neoforge", "1.21")
     }
 }
