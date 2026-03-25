@@ -27,6 +27,6 @@ pub_start="1.20.6"
 pub_start="1.21"
 
 ["26.1"]
-version="26.1-rc-1"
-pub_start="26.1-pre-1"
+forge="62.0.1"
+neoforge="1-beta"
 pub_end="latest"
