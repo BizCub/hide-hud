@@ -4,7 +4,6 @@
 # Extra dependencies see: https://linkie.shedaniel.dev/dependencies
 
 ["1.16.5"]
-forge="36.2.34"
 pub_start="1.16.2"
 pub_end="latest"
 
@@ -12,22 +11,13 @@ pub_end="latest"
 pub_end="1.16.5"
 
 ["1.17.1"]
-forge="37.1.1"
 pub_end="1.20.4"
 
 ["1.21.1"]
-forge="52.1.0"
-neoforge="218"
 pub_end="1.21.11"
 
 ["1.21.1-forge"]
 pub_start="1.20.6"
 
-["1.21.1-neoforge"]
-pub_start="1.21"
-
-["26.1.1"]
-forge="63.0.0"
-neoforge="0-beta"
-pub_start="26.1"
+["26.1.2"]
 pub_end="latest"
