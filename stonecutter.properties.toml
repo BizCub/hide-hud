@@ -3,15 +3,8 @@
 # NeoForge versions see: https://neoforged.net
 # Extra dependencies see: https://linkie.shedaniel.dev/dependencies
 
-["1.16.5"]
-pub_start="1.16.2"
+["26.1.2"]
 pub_end="latest"
-
-["1.16.5-forge"]
-pub_end="1.16.5"
-
-["1.17.1"]
-pub_end="1.20.4"
 
 ["1.21.1"]
 pub_end="1.21.11"
@@ -19,5 +12,12 @@ pub_end="1.21.11"
 ["1.21.1-forge"]
 pub_start="1.20.6"
 
-["26.1.2"]
+["1.17.1"]
+pub_end="1.20.4"
+
+["1.16.5"]
+pub_start="1.16.2"
 pub_end="latest"
+
+["1.16.5-forge"]
+pub_end="1.16.5"

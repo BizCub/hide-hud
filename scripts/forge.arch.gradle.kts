@@ -24,6 +24,8 @@ multiloader {
         runConfigs.getByName("server") { runDir = serverRunPath }
 
         forge.mixinConfigs("${mod.mixin}.mixins.json")
+        val awFile = file(ctForgeArchPath)
+        if (awFile.exists()) accessWidenerPath = awFile
 
         decompilers {
             get("vineflower").apply {
@@ -40,5 +42,9 @@ multiloader {
 
     tasks.named<Copy>("buildAndCollect") {
         from(builtFile)
+    }
+
+    tasks.named("validateAccessWidener") {
+        dependsOn("processResources")
     }
 }
