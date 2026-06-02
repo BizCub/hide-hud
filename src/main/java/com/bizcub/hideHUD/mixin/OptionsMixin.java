@@ -1,6 +1,7 @@
 package com.bizcub.hideHUD.mixin;
 
 import net.minecraft.client.CameraType;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -12,10 +13,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class OptionsMixin {
 
     @Shadow private CameraType cameraType;
-    @Shadow public boolean hideGui;
+    /*? <26.2*/ @Shadow public boolean hideGui;
 
     @Inject(method = "setCameraType", at = @At("TAIL"))
     public void hideHUD(CallbackInfo ci) {
-        this.hideGui = !this.cameraType.isFirstPerson();
+        //? >=26.2 {
+        /*var hud = Minecraft.getInstance().gui.hud;
+        if ((hud.isHidden() && cameraType.isFirstPerson()) || (!hud.isHidden() && !cameraType.isFirstPerson())) {
+            hud.toggle();
+        }
+
+        *///?} else {
+        this.hideGui = !this.cameraType.isFirstPerson();//?}
     }
 }
