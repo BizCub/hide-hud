@@ -5,6 +5,9 @@ plugins {
 }
 
 multiloader {
+    setMREnvironment(mrEnvs.clientOnly)
+    setCFEnvironment(cfEnvs.client)
+
     if (isFabric) {
         addDependency(
             dependency = "net.fabricmc:fabric-loader:${getDep("fabric")}"
