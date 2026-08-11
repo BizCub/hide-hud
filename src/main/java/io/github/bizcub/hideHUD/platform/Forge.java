@@ -1,5 +1,5 @@
 //? forge {
-/*package com.bizcub.hideHUD.platform;
+/*package io.github.bizcub.hideHUD.platform;
 
 import net.minecraftforge.fml.common.Mod;
 

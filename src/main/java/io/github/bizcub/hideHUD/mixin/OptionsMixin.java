@@ -1,4 +1,4 @@
-package com.bizcub.hideHUD.mixin;
+package io.github.bizcub.hideHUD.mixin;
 
 import net.minecraft.client.CameraType;
 import net.minecraft.client.Minecraft;

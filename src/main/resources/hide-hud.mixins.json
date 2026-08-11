@@ -1,6 +1,6 @@
 {
     "required": true,
-    "package": "com.bizcub.hideHUD.mixin",
+    "package": "io.github.bizcub.hideHUD.mixin",
     "injectors": {
         "defaultRequire": 1
     },
