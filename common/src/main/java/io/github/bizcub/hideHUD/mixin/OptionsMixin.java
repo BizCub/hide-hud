@@ -13,17 +13,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class OptionsMixin {
 
     @Shadow private CameraType cameraType;
-    /*? <26.2*/ //@Shadow public boolean hideGui;
 
     @Inject(method = "setCameraType", at = @At("TAIL"))
     public void hideHUD(CallbackInfo ci) {
-        //? >=26.2 {
         var hud = Minecraft.getInstance().gui.hud;
         if ((hud.isHidden() && cameraType.isFirstPerson()) || (!hud.isHidden() && !cameraType.isFirstPerson())) {
             hud.toggle();
         }
-
-        //?} else {
-        /*this.hideGui = !this.cameraType.isFirstPerson();*///?}
     }
 }
